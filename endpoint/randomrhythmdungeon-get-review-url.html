@@ -1,31 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Jon Delta Games</title>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #333;
-        }
-    </style>
-</head>
 <body>
-    <div class="container">
-        <h1>Welcome to Jon Delta Games!</h1>
-        <p>Here, we provide the latest game information.</p>
-    </div>
+    <script>// App StoreとGoogle PlayのレビューページのURL
+        var appStoreUrl = "https://www.twitch.tv/";
+        var googlePlayUrl = "https://play.google.com/store/apps/details?id=ililiworld.ReversEstory&reviewId=0";
+
+        // ユーザーエージェントによってリダイレクト先のURLを切り替える
+        var userAgent = navigator.userAgent.toLowerCase();
+        var redirectUrl = userAgent.includes("iphone") || userAgent.includes("ipad") ? appStoreUrl : googlePlayUrl;
+
+        // ブラウザをURLにリダイレクト
+        window.location.href = redirectUrl;</script>
 </body>
 </html>
